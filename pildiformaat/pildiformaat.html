@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pildid ja pildiformaafid</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: antiquewhite;
+            color: brown;
+        }
+
+        div {
+            display: flex;
+        }
+
+        .tulbad {
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .tulp {
+            flex-direction: row;
+            padding: 100px;
+            padding-top: 0;
+        }
+
+        h1, h2, p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: brown;
+            font-size: 900;
+            font-weight: 600;
+        }
+
+        li {
+            color: #ffffff00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tulbad">
+        <div class="tulp">
+            <ol>
+                <h1>B&W</h1>
+                <li>
+                    <h2>.WEBP</h2>
+                    <img src="/bw/n.webp" alt="n.webp">
+                    <p>1820 B</p>
+                </li>
+                <li>
+                    <h2>.PNG</h2>
+                    <img src="/bw/n.png" alt="n.png">
+                    <p>4195 B</p>
+                </li>
+                <li>
+                    <h2>.JPG</h2>
+                    <img src="/bw/n.jpg" alt="n.jpg">
+                    <p>4983 B</p>
+                </li>
+                <li>
+                    <h2>.SVG</h2>
+                    <img src="/bw/n.svg" alt="n.svg">
+                    <p>11376 B</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="tulp">
+            <ol>
+                <h1>Colored</h1>
+                <li>
+                    <h2>.WEBP</h2>
+                    <img src="/color/n-color.webp" alt="n-color.webp">
+                    <p>2440 B</p>
+                </li>
+                <li>
+                    <h2>.JPG</h2>
+                    <img src="/color/n-color.jpg" alt="n-color.jpg">
+                    <p>5234 B</p>
+                </li>
+                <li>
+                    <h2>.PNG</h2>
+                    <img src="/color/n-color.png" alt="n-color.png">
+                    <p>8875 B</p>
+                </li>
+                <li>
+                    <h2>.SVG</h2>
+                    <img src="/color/n-color.svg" alt="n-color.svg">
+                    <p>15492 B</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
