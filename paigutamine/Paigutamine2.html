@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paigutamine 2</title>
+    <style>
+        body {
+            margin-top: 0px;
+            margin-left: 0px;
+            font-family: 'Courier New', Courier, monospace;
+	        font-size: 24px;
+	        font-stretch: 10%;
+	        font-variant: small-caps;
+	        font-weight: 900;
+	        line-height: 50px;
+            background: #22092C;
+        }
+
+        .centered-container {
+            min-width: 425px;
+            position: center;
+            padding: 30px;
+            border: 1rem #872341 dashed;
+            border-radius: 45px;
+            margin-top: 10%;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: #F05941;
+            text-align: center;
+        }
+
+        table {
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: left;
+        }
+
+        input[type=text] {
+            height: 30px;
+            width: 200px;
+            border-radius: 8px;
+            border: 0;
+            background-color: #ffffff;
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        input[type=email] {
+            height: 30px;
+            width: 200px;
+            border-radius: 8px;
+            border: 0;
+            background-color: #ffffff;
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        input[type=date] {
+            height: 30px;
+            width: 200px;
+            border-radius: 8px;
+            border: 0;
+            background-color: #ffffff;
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        input[type=tel] {
+            height: 30px;
+            width: 200px;
+            border-radius: 8px;
+            border: 0;
+            background-color: #ffffff;
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        textarea {
+            height: 75px;
+            width: 200px;
+            border-radius: 8px;
+            border: 0;
+            background-color: #ffffff;
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        input[type=submit] {
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
+            border-color: #22092C;
+            background-color: #BE3144;
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+            font-variant: small-caps;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        @media only screen and (max-width: 750px){
+            body {
+                background-color: #F05941;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-container">
+    <h1>Paigutamine 2: Skaleeruv vorm</h1><form action="" method="get" class="form-example">
+        <table>
+            <tr>
+                <th><label for="name">Sinu nimi:</label></th>
+                <th><input type="text" name="name" id="name" placeholder="Sinu nimi" required=""></th>
+            </tr>
+            <tr>
+                <th><label for="email">Sinu e-mail:</label></th>
+                <th><input type="email" name="email" id="email" placeholder="Sinu email" required=""></th>
+            </tr>
+            <tr>
+                <th><label for="b-day">Sinu sünnikuupäev:</label></th>
+                <th><input type="date" id="b-day" name="b-day" value="2018-07-22" min="1991-01-02" max="2021-12-31"></th>
+            </tr>
+            <tr>
+                <th><label for="phone">Sinu tel number:</label></th>
+                <th><input type="tel" id="phone" name="phone" required=""></th>
+            </tr>
+            <tr>
+                <th><label for="story">Kirjuta endast:</label></th>
+                <th><textarea id="story" name="story" placeholder="..." rows="5" cols="33"></textarea></th>
+            </tr>
+        </table>
+
+        <div>
+        <input type="submit" value="Saada">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            background: greenyellow;
+            padding: 20px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            font-variant: small-caps;
+        }
+
+        main{
+            display: flex;
+            background: pink;
+            padding: 20px;
+        }
+
+        main>article {
+            background: bisque;
+            padding: 20px;
+            border-radius: 25px;
+            flex: 1;
+        }
+
+        nav {
+            background: lightblue;
+            padding: 10px;
+            max-height: 50px;
+        }
+
+        nav>ul {
+            padding: 10px;
+        }
+
+        nav>table {
+            min-width: 100%;
+        }
+
+        main>aside {
+            background: yellow;
+            padding: 20px;
+            border-radius: 25px;
+            max-width: 150px;
+        }
+
+        footer {
+            background: purple;
+            padding: 20px;
+            border-end-end-radius: 25px;
+            border-end-start-radius: 25px;
+            text-align: center;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Snickers: "Don’t let hunger happen to you!"</h1>
+    </header>
+    
+    <nav>
+        <table>
+            <tr>
+                <th>Item 1</th>
+                <th>Item 2</th>
+                <th>Item 3</th>
+            </tr>
+        </table>
+    </nav>
+
+    <main>
+        <article>
+            <h1>Paigutamine 4</h1>
+
+            <details>
+                <summary>Как называют сумасшедшего француза?</summary>
+                Франшиза.
+            </details>
+
+            <section>
+                <h2>Section 1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum dolorum ratione excepturi vero
+                    neque quidem fugiat accusantium! Obcaecati excepturi pariatur soluta nostrum aperiam magnam ullam
+                    nihil fugiat in, aliquid ex.</p>
+            </section>
+
+            <section>
+                <h2>Section 2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi minus vitae cupiditate quo, sed,
+                    sapiente neque tempore quis, at doloribus pariatur aliquid tenetur suscipit excepturi recusandae
+                    error odio impedit laboriosam.</p>
+            </section>
+        </article>
+
+        <article>
+            <h2>Global attributes</h2>
+            
+            <form>
+                
+                <input spellcheck="true" type="email" enterkeyhint="enter" placeholder="type=e-mail, keyhint=enter">
+                <input type="email" enterkeyhint="next" placeholder="enterkeyhint=next">
+                <input type="text" autofocus="" placeholder="autofocus">
+                <input type="email" enterkeyhint="search" placeholder="enterkeyhint=search">
+                <input type="password" placeholder="Password">
+                <input type="number" placeholder="0123456789">
+                <input type="tel" placeholder="+372 544 233 5555">
+                <input type="url" placeholder="http://www.domeen.ee">
+            </form>
+
+            <button popovertarget="my-popover">Open Popover</button>
+            <div popover="" id="my-popover">Greetings, one and all!</div>
+        </article>
+
+        <aside>
+            <div>
+                <span style="color:brown">
+                    Span #1, in the div.
+                    <span style="color:violet">Span #2, in the span that's in the div.</span>
+                </span>
+            </div>
+            <span>Span #3, not in the div at all.</span>
+        </aside>
+    </main>
+
+    <footer>footer</footer>
+</body>
+</html>
