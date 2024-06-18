@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .canvas svg {
+            width: 800px;
+            height: 796px;
+        }
+
+        .spin {
+            width: 100px;
+            height: 100px;
+            background-color: #212121;
+            animation-name: spin;
+            animation-duration: 17000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; 
+        }
+
+        @keyframes spin {
+            from {
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(360deg);
+            }
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <svg>
+            <!-- fon -->
+            <rect x="0" y="0" height="800" width="800" style="fill: #73b2ff"/>
+
+            <!-- Sun -->
+            <circle class="spin" cx="0" cy="0" r="325" style="stroke: #ffde58; stroke-dasharray: 25 16; stroke-width: 630px; fill: #ffff0075;">
+            </circle>
+            <circle cx="0" cy="0" r="50" style="fill: #ffcc00"/>
+
+            <!-- grass-->
+            <rect x="0" y="460" height="800" width="800" style="fill: #059600"/>
+            <polyline points="460,550  525,550  530,600  520,630  420,670  425,700  490,725  535,750  570,800  340,800  400,750  340,725  330,690  350,650  450,600  460,590" style="fill:#eeff00;"/>
+
+            <!-- ball -->
+            <circle cx="400" cy="450" r="15" style="fill: #e00000;">
+                <animate attributeName="cx" attributeType="XML"
+                         from="-100"  to="1000"
+                         begin="0s" dur="10s"
+                         fill="remove" repeatCount="indefinite"/>
+            </circle>
+
+            <!-- dom -->
+            <rect x="350" y="400" height="150" width="200" style="fill: #96cc59"/>
+            <rect x="460" y="450" height="103" width="65" style="stroke:#ffffff; stroke-width: 4px; fill: #cc0000"/>
+            <rect x="375" y="450" height="60" width="55" style="stroke:#ffffff; stroke-width: 4px; fill: #00eeff"/>
+            <rect x="375" y="250" height="150" width="30" style="fill: #797979"/>
+            <circle cx="510" cy="500" r="7" style="fill: #ffc7b6"/>
+            <polyline points="325,420  575,420  450,280" style="fill:#728d8c;"/>
+        </svg>
+    </div>
+</body>
+</html>
